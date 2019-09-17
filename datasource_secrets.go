@@ -7,7 +7,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform/helper/schema"
-	"github.com/BitPan/terraform-provider-credstash/credstash"
+	"github.com/vijayanandsharma/terraform-provider-credstash/credstash"
 )
 
 func dataSourceSecret() *schema.Resource {

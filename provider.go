@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform/terraform"
 	"github.com/aws/aws-sdk-go/aws/credentials/stscreds"
 	"github.com/aws/aws-sdk-go/aws/credentials"
-    "github.com/BitPan/terraform-provider-credstash/credstash"
+    "github.com/vijayanandsharma/terraform-provider-credstash/credstash"
 )
 
 var _ terraform.ResourceProvider = provider()
