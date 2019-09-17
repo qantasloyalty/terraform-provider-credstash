@@ -30,16 +30,16 @@ func TestClient_GetSecret(t *testing.T) {
 	}
 
 	c := &Client{
-		decrpyter: decrypt,
+		decrypter: decrypt,
 		dynamoDB:  db,
 		table:     "test_table",
 	}
 
-	result, err := c.GetSecret("test_key", "", nil)
+	result, err := c.GetSecret("test_key", "", "", nil)
 	assertNoError(t, err)
 
 	if result != password {
-		t.Errorf("decrpyt failed.\nexpected result: %s\ngot: %s", password, result)
+		t.Errorf("decrypt failed.\nexpected result: %s\ngot: %s", password, result)
 	}
 }
 
