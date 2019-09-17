@@ -26,7 +26,7 @@ func New(table string, sess *session.Session) *Client {
 func NewWithAssumedRole(table string, sess *session.Session, creds *credentials.Credentials) *Client {
 	return &Client{
 		table:     table,
-		decrpyter: kms.New(sess, aws.NewConfig().WithCredentials(creds)),
+		decrypter: kms.New(sess, aws.NewConfig().WithCredentials(creds)),
 		dynamoDB:  dynamodb.New(sess, aws.NewConfig().WithCredentials(creds)),
 	}
 }
